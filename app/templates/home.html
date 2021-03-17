@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+    <div class="brands__container">
+        <h1>Brands:</h1>
+    </div>
+    <ul>
+        {% for brand in brands %}
+        <li><a href="{% url 'products' brand.id %}">{{brand.brand_name}}</a></li>
+        {% endfor %}
+    </ul>
+</main>
+{% endblock content %}

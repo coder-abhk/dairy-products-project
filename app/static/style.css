@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla";
+  color: #555;
+}
+
+nav {
+  border-bottom: 3px dotted #ececec;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0rem;
+  margin-bottom: 3rem;
+}
+
+.right__links ul {
+  list-style: none;
+  display: flex;
+}
+
+.right__links ul li {
+  margin-left: 1rem;
+}
+
+.right__links ul li a {
+  text-decoration: none;
+  color: #707070;
+}
+
+.right__links ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.brands__container {
+  margin-bottom: 1.3rem;
+}
+
+main ul li {
+  line-height: 28px;
+}
+
+main ul li a {
+  text-decoration: none;
+  color: deeppink;
+  font-size: 18px;
+}
+
+main ul li a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+/* products */
+section {
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media (max-width: 571px) {
+  section {
+    width: 95%;
+  }
+}
+
+table {
+  width: 100%;
+  border: 3px dotted #dddddd;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+
+table caption {
+  font-size: 18;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+th,
+td {
+  border: 3px dotted #ececec;
+  padding: 0.5rem;
+}
+
+.delete__btn,
+.edit__btn {
+  display: block;
+  text-align: center;
+  padding: 3px;
+  min-width: 45px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin: 0.3rem;
+}
+
+.delete__btn {
+  background-color: orange;
+  color: white;
+}
+
+.edit__btn {
+  background-color: teal;
+  color: white;
+}
+
+/* form */
+form {
+  width: 100%;
+}
+
+.fieldset {
+  padding: 1rem;
+  border-radius: 3px;
+  border: 2px dashed #ececec;
+}
+
+legend {
+  margin: 0 1rem;
+  padding: 0 1rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.input {
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+}
+
+#id_product_name,
+#id_product_price {
+  padding: 0.3rem;
+  color: #555;
+  border-radius: 3px;
+  border: 2px dashed #ececec;
+}
+
+#username,
+#password {
+  padding: 0.3rem;
+  color: #555;
+  border-radius: 3px;
+  border: 2px dashed #ececec;
+}
+
+.save__btn {
+  border: 2px dotted #ececec;
+  border-radius: 3px;
+  padding: 6px;
+  color: white;
+  cursor: pointer;
+  background-color: #181818;
+}
+
+.save__btn:hover {
+  background-color: teal;
+  color: white;
+}
+
+.msg {
+  color: orangered;
+  opacity: 0.8;
+  margin-bottom: 0.3rem;
+}
+
+/* about */
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  margin-bottom: 1.5rem;
+}
+
+.bio p {
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.highlight {
+  color: deeppink;
+  font-size: 24px;
+}

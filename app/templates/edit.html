@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <form method="POST" name="form">
+        <fieldset class="fieldset">
+            <legend for="form">Edit Product</legend>
+            {% csrf_token %}
+            <p class="label">Product Name:</p>
+            <p class="input">{{form.product_name}}</p>
+            <p class="label">Product Price:</p>
+            <p class="input">{{form.product_price}}</p>
+            <p><input class="save__btn" type="submit" value="save"></p>
+        </fieldset>
+    </form>
+</section>
+{% endblock content %}

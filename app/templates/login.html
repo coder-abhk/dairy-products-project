@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <form method="POST" name="form">
+        <fieldset class="fieldset">
+            <legend for="form">Login</legend>
+            {% csrf_token %}
+            {% if msg %}
+            <p class="msg">{{msg}}</p>
+            {% endif %}
+            <p class="label">Username:</p>
+            <p class="input"><input id="username" type="text" name="username" required></p>
+            <p class="label">Password:</p>
+            <p class="input"><input id="password" type="password" name="password" required></p>
+            <p><input class="save__btn" type="submit" value="Login"></p>
+        </fieldset>
+    </form>
+</section>
+{% endblock content %}
