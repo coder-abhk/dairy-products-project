@@ -56,6 +56,10 @@ main ul li a {
   font-size: 18px;
 }
 
+main ul li a:visited {
+  color: #555;
+}
+
 main ul li a:hover {
   color: #555;
   text-decoration: underline;
@@ -102,6 +106,7 @@ td {
   border-radius: 3px;
   text-decoration: none;
   margin: 0.3rem;
+  transition: opacity 300ms;
 }
 
 .delete__btn {
@@ -112,6 +117,11 @@ td {
 .edit__btn {
   background-color: teal;
   color: white;
+}
+
+.delete__btn:hover,
+.edit__btn:hover {
+  opacity: 0.8;
 }
 
 /* form */

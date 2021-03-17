@@ -14,6 +14,7 @@ class Brand(models.Model):
 class Products(models.Model):
     product_name = models.CharField(max_length=55, null=False)
     product_price = models.IntegerField(default=0, null=False)
+    product_weight = models.IntegerField(default=0, null=False)
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE, null=False)
 
     def __str__(self):

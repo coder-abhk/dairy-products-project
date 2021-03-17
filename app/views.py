@@ -46,6 +46,7 @@ def add_product_view(request):
         form = AddProductForm(request.POST)
         if form.is_valid():
             form.save()
+            return redirect("home")
     form = AddProductForm()
     return render(request, "addproduct.html", {"form": form})
 

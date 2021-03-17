@@ -7,6 +7,7 @@
         <tr>
             <th>id</th>
             <th>product name</th>
+            <th>weight(gm)</th>
             <th>price</th>
             <th></th>
         </tr>
@@ -15,6 +16,7 @@
 
             <td>{{product.id}}</td>
             <td>{{product.product_name}}</td>
+            <td>{{product.product_weight}}</td>
             <td>{{product.product_price}} rs.</td>
             <td class="table__btns"><a class="delete__btn" href="{% url 'delete' product.id %}">Delete</a>
                 <a class="edit__btn" href="{% url 'editProduct' product.id %}">Edit</a>
