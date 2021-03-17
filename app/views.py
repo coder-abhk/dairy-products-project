@@ -14,8 +14,8 @@ def home_view(request):
 
 @login_required(login_url="login_admin")
 def products_view(request, id):
-    brands = Brand.objects.get(id=id)
-    products = brands.products_set.all()
+    brand = Brand.objects.get(id=id)
+    products = brand.products_set.all()
     return render(request, "products.html", {"products": products})
 
 # delete product operation view
